@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wirebench</title>
+<meta name="description" content="Design electrical wiring diagrams, check them for common safety mistakes, and organise your projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="site" id="site" hidden>
+  <header class="s-nav"><div class="wrap"><div class="brand"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15h6l3-9 5 17 3-8h7"/></svg>Wirebench</div>
+    <nav class="s-links" aria-label="Website">
+      <button data-scroll="features">Features</button><button data-scroll="how">How it works</button><button data-scroll="checks">Safety checks</button><button data-scroll="faq">FAQ</button>
+    </nav>
+    <div class="s-cta"><button class="btn ghost" data-site="signin">Sign in</button><button class="btn primary" data-site="register">Get started</button></div>
+  </div></header>
+
+  <section class="hero"><div class="wrap">
+    <div>
+      <p class="eyebrow">Electrical wiring design software</p>
+      <h1>Design safer wiring, faster.</h1>
+      <p class="lead">Draw circuits from standard parts, let Wirebench catch missing earths, undersized cable and unprotected loads, and keep every project organised in one workspace.</p>
+      <div class="hero-cta"><button class="btn primary xl" data-site="register">Create a free account</button><button class="btn xl" data-site="guest">Try it as a guest</button></div>
+      <p class="fine">Runs in your browser. Nothing to install.</p>
+    </div>
+    <div class="mock-wrap">
+      <div class="mock"><div class="mock-bar"><i></i><i></i><i></i><span>Kitchen sockets · Wirebench</span></div><div class="mock-body" id="hero-pic" role="img" aria-label="Example wiring diagram of a kitchen socket circuit"></div></div>
+      <div class="mock-chip"><b>Design checks</b><span class="badge ok">No issues found</span></div>
+    </div>
+  </div></section>
+
+  <section class="stats"><div class="wrap">
+    <div class="stat"><div class="n">11</div><div class="l">component types, from supply to earth bar</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">automatic design checks as you draw</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">ready-made starter circuits</div></div>
+  </div></section>
+
+  <section class="sec" id="s-features"><div class="wrap">
+    <p class="eyebrow">Features</p><h2>Everything for planning a circuit in one place</h2>
+    <p class="sub">From the first sketch to a checked design, Wirebench keeps the drawing, the rules and the reference material together.</p>
+    <div class="fgrid">
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 17.5h7M17.5 14v7"/></svg></span><h3>Component library</h3><p>Mains supply, breakers, fuses, RCDs, switches, lights, sockets, appliances, junction boxes and neutral and earth bars.</p></div>
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6h5a3 3 0 0 1 3 3v6a3 3 0 0 0 3 3"/></svg></span><h3>Interactive wiring</h3><p>Click one terminal, then another. Wire type is chosen automatically from the terminals, with cable size set per run.</p></div>
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Automatic safety checks</h3><p>Flags unprotected loads, missing RCDs, open neutrals and earths, wrong wire colours, and cable that is too small for its breaker.</p></div>
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><h3>Project management</h3><p>Save, duplicate and organise projects with thumbnails and status badges. Export and import any project as JSON.</p></div>
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Personal dashboard</h3><p>See open issues across every project, jump straight to the part that needs fixing, and track design scores over time.</p></div>
+      <div class="fcard"><span class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg></span><h3>Guides and calculators</h3><p>Wire colours, cable and breaker sizing, earthing, a safe-working checklist and a voltage-drop calculator, beside your diagram.</p></div>
+    </div>
+  </div></section>
+
+  <section class="sec alt" id="s-how"><div class="wrap">
+    <p class="eyebrow">How it works</p><h2>From blank canvas to checked circuit in three steps</h2>
+    <p class="sub">Start from a template or an empty grid. The checks update after every change.</p>
+    <div class="steps">
+      <div class="step"><div class="n">STEP 1</div><h3>Place components</h3><p>Pick parts from the palette and drop them on the grid. Rotate, label and set ratings in the inspector.</p></div>
+      <div class="step"><div class="n">STEP 2</div><h3>Connect the wires</h3><p>Join terminals with live, neutral, earth and switched-live conductors, and choose a cable size for each run.</p></div>
+      <div class="step"><div class="n">STEP 3</div><h3>Review the checks</h3><p>Fix anything flagged, read the matching guide, then save the project to your dashboard.</p></div>
+    </div>
+  </div></section>
+
+  <section class="band" id="s-checks"><div class="wrap">
+    <div>
+      <p class="eyebrow">Safety checks</p><h2>Catch common mistakes before they reach the wall</h2>
+      <p>Wirebench traces every circuit back to the supply and checks the details that are easy to miss on paper.</p>
+      <ul class="ticks"><li>Every load has a breaker or fuse in its supply path</li><li>Sockets are behind an RCD</li><li>Neutral and earth reach the supply</li><li>Wire type matches each terminal</li><li>Cable size suits the breaker rating</li><li>Connected load stays within the breaker rating</li></ul>
+    </div>
+    <div class="scards">
+      <div class="scard"><b>Cable too small on the live wire to Heater breaker</b><small>1.5 mm² carries about 16 A, the breaker is rated 32 A.</small></div>
+      <div class="scard warn"><b>Garage heater has no earth connected</b><small>Open the earthing guide for the fix.</small></div>
+      <div class="scard ok"><b>Kitchen sockets: no issues found</b><small>Protected, earthed, and cable matches the breaker.</small></div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="s-faq"><div class="wrap">
+    <p class="eyebrow">FAQ</p><h2>Questions, answered</h2>
+    <div class="faq">
+      <details><summary>Is Wirebench free to use?</summary><p>There are no plans or paywalls in this version. Create an account or continue as a guest and use every feature.</p></details>
+      <details><summary>Do I need an account?</summary><p>No. As a guest you can use everything straight away. An account with a username and password keeps your profile and projects separate from anyone else using the same browser. Accounts are stored on this device only, so they do not follow you to another browser or device.</p></details>
+      <details><summary>Does Wirebench replace an electrician?</summary><p>No. The checks catch common drawing mistakes. They are a planning aid and do not replace a qualified electrician or your local wiring rules, and many places require fixed wiring to be done or certified by a licensed professional.</p></details>
+      <details><summary>Which supply voltages and regions are supported?</summary><p>You choose a region and default supply voltage in your profile, and each project can use 120 V, 230 V or 240 V. Wire colour references cover UK and EU and US and Canada conventions.</p></details>
+      <details><summary>Can I take my diagrams with me?</summary><p>Yes. Any project can be exported as JSON from the Projects page and imported again later or on another device.</p></details>
+    </div>
+  </div></section>
+
+  <section class="cta"><div class="wrap"><h2>Start your first diagram today</h2><p>Open a starter circuit and see the checks work in under a minute.</p><button class="btn xl" data-site="register">Create a free account</button></div></section>
+
+  <footer class="foot"><div class="wrap">
+    <div><div class="brand"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15h6l3-9 5 17 3-8h7"/></svg>Wirebench</div><p style="max-width:36ch">Wiring diagram design with built-in safety checks.</p></div>
+    <div><h4>Product</h4><button class="fl" data-scroll="features">Features</button><button class="fl" data-scroll="how">How it works</button><button class="fl" data-scroll="checks">Safety checks</button></div>
+    <div><h4>Account</h4><button class="fl" data-site="signin">Sign in</button><button class="fl" data-site="register">Create account</button><button class="fl" data-scroll="faq">FAQ</button></div>
+    <p class="legal">Wirebench is a planning aid. It does not replace a qualified electrician, and it does not certify that a design meets any wiring regulation. © 2026 Wirebench.</p>
+  </div></footer>
+</div>
+
+<div class="gate" id="gate" hidden></div>
+
+<div class="app" id="app" hidden>
+  <aside class="side">
+    <div class="brand"><svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15h6l3-9 5 17 3-8h7"/></svg>Wirebench</div>
+    <nav class="nav" aria-label="Sections">
+      <button class="nav-item" data-view="dashboard"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="2.5" width="6" height="7" rx="1"/><rect x="11.5" y="2.5" width="6" height="4" rx="1"/><rect x="2.5" y="12.5" width="6" height="5" rx="1"/><rect x="11.5" y="9.5" width="6" height="8" rx="1"/></svg>Dashboard</button>
+      <button class="nav-item" data-view="designer"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="10" r="2"/><circle cx="15.5" cy="5" r="2"/><circle cx="15.5" cy="15" r="2"/><path d="M6.5 10h3l2-5h2M9.5 10l2 5h2"/></svg>Designer</button>
+      <button class="nav-item" data-view="projects"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5a1 1 0 0 1 1-1h4l1.5 2h7.5a1 1 0 0 1 1 1v7.5a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1z"/></svg>Projects</button>
+      <button class="nav-item" data-view="guides"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 3.5h5a2 2 0 0 1 1.5 .7 2 2 0 0 1 1.5-.7h5v12h-5a2 2 0 0 0-1.5.8 2 2 0 0 0-1.5-.8h-5z"/><path d="M10 4.2v11.6"/></svg>Guides</button>
+    </nav>
+    <div class="side-sp"></div>
+    <div class="me" id="me"></div>
+  </aside>
+  <div class="content">
+    <main>
+      <section class="view designer" id="v-designer">
+        <aside class="palette" id="palette" aria-label="Component palette"></aside>
+        <div class="stage">
+          <div class="toolbar" id="toolbar">
+            <input type="text" id="pname" aria-label="Project name" maxlength="60">
+            <div class="grp"><span class="lab">Wire</span>
+              <div class="seg" id="wmode" role="group" aria-label="Wire type">
+                <button data-wmode="auto" aria-pressed="true">Auto</button>
+                <button data-wmode="live" aria-pressed="false"><i class="sw" style="background:var(--w-live)"></i>Live</button>
+                <button data-wmode="neutral" aria-pressed="false"><i class="sw" style="background:var(--w-neutral)"></i>Neutral</button>
+                <button data-wmode="earth" aria-pressed="false"><i class="sw" style="background:var(--w-earth)"></i>Earth</button>
+                <button data-wmode="switched" aria-pressed="false"><i class="sw" style="background:var(--w-switched)"></i>Switched</button>
+              </div>
+            </div>
+            <div class="grp"><span class="lab">Cable</span><select id="csize" aria-label="Cable size"></select></div>
+            <div class="grp">
+              <button class="btn" data-act="undo" id="b-undo" title="Undo (Ctrl+Z)">Undo</button>
+              <button class="btn" data-act="redo" id="b-redo" title="Redo (Ctrl+Y)">Redo</button>
+              <button class="btn" data-act="rotate" id="b-rot" title="Rotate (R)">Rotate</button>
+              <button class="btn danger" data-act="delete" id="b-del" title="Delete (Del)">Delete</button>
+            </div>
+            <div class="grp"><button class="btn" data-act="zoomout" aria-label="Zoom out">−</button><span class="mono" id="zl" style="min-width:42px;text-align:center">100%</span><button class="btn" data-act="zoomin" aria-label="Zoom in">+</button></div>
+          </div>
+          <div class="canvas-wrap" id="cwrap"><svg id="cv" role="img" aria-label="Wiring diagram canvas"></svg></div>
+          <div class="hint" id="hint"></div>
+        </div>
+        <aside class="inspector" aria-label="Inspector"><div id="props"></div><hr class="rule"><div id="checks"></div></aside>
+      </section>
+      <section class="view" id="v-dashboard"><div class="page" id="dash"></div></section>
+      <section class="view" id="v-projects"><div class="page" id="projects"></div></section>
+      <section class="view" id="v-guides"><div class="page" id="guides"></div></section>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
